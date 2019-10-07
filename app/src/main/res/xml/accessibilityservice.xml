@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- These options MUST be specified here in order for the events to be received on first
  start in Android 4.1.1 -->
-
 <accessibility-service
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:accessibilityEventTypes="typeContextClicked|typeViewClicked"
     android:packageNames="com.volskyioleh.testservice"
-    android:accessibilityFlags="flagRequestFilterKeyEvents"
-    android:accessibilityFeedbackType="feedbackAllMask"
-    android:notificationTimeout="50"
+    android:accessibilityFlags="flagDefault|flagRetrieveInteractiveWindows"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="150"
     android:canRetrieveWindowContent="true"
-    android:settingsActivity=""
+    android:settingsActivity="com.example.android.accessibility.ServiceSettingsActivity"
+    android:description="@string/app_name"
     android:canRequestFilterKeyEvents="true"
     />
