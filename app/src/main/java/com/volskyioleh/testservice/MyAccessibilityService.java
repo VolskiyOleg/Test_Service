@@ -40,14 +40,14 @@ public class MyAccessibilityService extends AccessibilityService {
     @Override
     protected void onServiceConnected() {
         super.onServiceConnected();
-        AccessibilityServiceInfo config = new AccessibilityServiceInfo();
-        config.eventTypes = AccessibilityEvent.TYPE_VIEW_CLICKED;
-        config.feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC;
-
-        if (Build.VERSION.SDK_INT >= 16)
-            config.flags = AccessibilityServiceInfo.FLAG_INCLUDE_NOT_IMPORTANT_VIEWS;
-        //PrefManager.get().saveSendKeyApp(true);
-        setServiceInfo(config);
+//        AccessibilityServiceInfo config = new AccessibilityServiceInfo();
+//        config.eventTypes = AccessibilityEvent.TYPE_VIEW_CLICKED;
+//        config.feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC;
+//
+//        if (Build.VERSION.SDK_INT >= 16)
+//            config.flags = AccessibilityServiceInfo.FLAG_INCLUDE_NOT_IMPORTANT_VIEWS;
+//        //PrefManager.get().saveSendKeyApp(true);
+//        setServiceInfo(config);
     }
 
     @Override
