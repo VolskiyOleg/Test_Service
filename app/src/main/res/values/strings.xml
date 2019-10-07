@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestService</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="text_alert">Нужно включить сервис в настройках</string>
+</resources>
