@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.volskyioleh.testservice">
-
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +19,7 @@
 
         <service
             android:name=".MyAccessibilityService"
-            android:label="MyAccessibilityService"
+            android:label="My Accessibility Service"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
